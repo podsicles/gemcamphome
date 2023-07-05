@@ -1,4 +1,6 @@
 <h1>Edit Post id: <%= @post.id %></h1>
+
+<%= link_to 'Posts', posts_path %>
 <% if @post.errors.any? %>
   <ul>
     <% @post.errors.each do |error| %>
